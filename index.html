@@ -22,7 +22,10 @@
             const clockElement = document.getElementById('clock');
             const now = new Date();
             clockElement.innerHTML = now.toLocaleTimeString(); // Current time display hoga
-        }
+// --can check these too // clockElement.innerHTML = now.getDay(); // clockElement.innerHTML = now.getFullYear()  clockElement.innerHTML = now.getMonth() clockElement.innerHTML = now.getDate()
+// clockElement.innerHTML = now.toLocaleDateString() clockElement.innerHTML = now.toDateString() clockElement.innerHTML = now.toJSON()
+clockElement.innerHTML += now.toDateString()
+}
 
         setInterval(displayTime, 1000); // Har second clock update hoti rahegi
     </script>
